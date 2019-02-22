@@ -6,14 +6,24 @@ interface Product {
   price: number;
 }
 
-export default React.createContext({
-  products: [
-    { id: "p1", title: "Gaming Mouse", price: 29.99 },
-    { id: "p2", title: "Harry Potter 3", price: 9.99 },
-    { id: "p3", title: "Used plastic bottle", price: 0.99 },
-    { id: "p4", title: "Half-dried plant", price: 2.99 }
-  ],
-  cart: [{ id: "p1", title: "Gaming Mouse", price: 29.99, quantity: 1 }],
+interface Cart {
+  id: string;
+  title: string;
+  price: number;
+  quantity: number;
+}
+
+interface ContextType {
+  products: Product[];
+  cart: Cart[];
+  [key: string]: any;
+}
+
+export default React.createContext<ContextType>({
+  products: [],
+  cart: [],
+  // products: [{ id: "p1", title: "Gaming Mouse", price: 29.99 }],
+  // cart: [{ id: "", title: "", price: 0, quantity: 0 }],
   addProductToCart: (product: Product) => {},
   removeProductFromCart: (productId: string) => {}
 });

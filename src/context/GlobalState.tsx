@@ -18,7 +18,11 @@ const GlobalState = (props: Props) => {
     { id: "p1", title: "Gaming Mouse", price: 29.99 },
     { id: "p2", title: "Harry Potter 3", price: 9.99 },
     { id: "p3", title: "Used plastic bottle", price: 0.99 },
-    { id: "p4", title: "Half-dried plant", price: 2.99 }
+    { id: "p4", title: "Half-dried plant", price: 2.99 },
+    { id: "p5", title: "Keyboard", price: 29.99 },
+    { id: "p6", title: "Monitor", price: 199.99 },
+    { id: "p7", title: "Headphones", price: 20.99 },
+    { id: "p8", title: "Microwave", price: 62.99 }
   ];
 
   const [cartState, dispatch] = useReducer(shopReducer, { cart: [] });
@@ -26,13 +30,13 @@ const GlobalState = (props: Props) => {
   const addProductToCart = (product: Product) => {
     setTimeout(() => {
       dispatch({ type: ADD_PRODUCT, product: product });
-    }, 700);
+    }, 400);
   };
 
   const removeProductFromCart = (productId: string) => {
     setTimeout(() => {
       dispatch({ type: REMOVE_PRODUCT, productId: productId });
-    }, 700);
+    }, 400);
   };
 
   return (

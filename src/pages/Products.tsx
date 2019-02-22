@@ -7,7 +7,7 @@ import "./Products.scss";
 
 interface Props {}
 
-const ProductsPage = (props: Props, shark: any) => {
+const ProductsPage = (props: Props, binding: any) => {
   return (
     <ShopContext.Consumer>
       {context => (
@@ -26,7 +26,7 @@ const ProductsPage = (props: Props, shark: any) => {
                   </div>
                   <div>
                     <button
-                      onClick={context.addProductToCart.bind(shark, product)}
+                      onClick={context.addProductToCart.bind(binding, product)}
                     >
                       Add to Cart
                     </button>

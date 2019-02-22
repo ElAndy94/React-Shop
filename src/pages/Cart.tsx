@@ -7,7 +7,7 @@ import "./Cart.scss";
 
 interface Props {}
 
-const CartPage = (props: Props, shark: any) => {
+const CartPage = (props: Props, binding: any) => {
   const context = useContext(ShopContext);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const CartPage = (props: Props, shark: any) => {
               <div>
                 <button
                   onClick={context.removeProductFromCart.bind(
-                    shark,
+                    binding,
                     cartItem.id
                   )}
                 >
