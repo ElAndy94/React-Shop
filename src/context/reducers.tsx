@@ -1,5 +1,5 @@
-export const ADD_PRODUCT = "ADD_PRODUCT";
-export const REMOVE_PRODUCT = "REMOVE_PRODUCT";
+export const ADD_PRODUCT = 'ADD_PRODUCT';
+export const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
 
 interface Product {
   id: string;
@@ -26,7 +26,7 @@ const addProductToCart = (product: Product, state: any) => {
 };
 
 const removeProductFromCart = (productId: string, state: any) => {
-  console.log("Removing product with id: " + productId);
+  console.log('Removing product with id: ' + productId);
   const updatedCart = [...state.cart];
   const updatedItemIndex = updatedCart.findIndex(item => item.id === productId);
 

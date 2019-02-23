@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface Product {
   id: string;
@@ -22,8 +22,6 @@ interface ContextType {
 export default React.createContext<ContextType>({
   products: [],
   cart: [],
-  // products: [{ id: "p1", title: "Gaming Mouse", price: 29.99 }],
-  // cart: [{ id: "", title: "", price: 0, quantity: 0 }],
   addProductToCart: (product: Product) => {},
   removeProductFromCart: (productId: string) => {}
 });

@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import ShopContext from "../context/shop-context";
-import Navigation from "../components/Navigation/Navigation";
+import ShopContext from '../context/shop-context';
+import Navigation from '../components/Navigation/Navigation';
 
-import "./Products.scss";
+import './Products.scss';
 
 interface Props {}
 

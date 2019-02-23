@@ -1,7 +1,7 @@
-import React, { useReducer } from "react";
+import React, { useReducer } from 'react';
 
-import ShopContext from "./shop-context";
-import { shopReducer, ADD_PRODUCT, REMOVE_PRODUCT } from "./reducers";
+import ShopContext from './shop-context';
+import { shopReducer, ADD_PRODUCT, REMOVE_PRODUCT } from './reducers';
 
 interface Props {
   children: any;
@@ -15,14 +15,22 @@ interface Product {
 
 const GlobalState = (props: Props) => {
   const products = [
-    { id: "p1", title: "Gaming Mouse", price: 29.99 },
-    { id: "p2", title: "Harry Potter 3", price: 9.99 },
-    { id: "p3", title: "Used plastic bottle", price: 0.99 },
-    { id: "p4", title: "Half-dried plant", price: 2.99 },
-    { id: "p5", title: "Keyboard", price: 29.99 },
-    { id: "p6", title: "Monitor", price: 199.99 },
-    { id: "p7", title: "Headphones", price: 20.99 },
-    { id: "p8", title: "Microwave", price: 62.99 }
+    { id: 'p1', title: 'Gaming Mouse', price: 29.99 },
+    { id: 'p2', title: 'Harry Potter 3', price: 9.99 },
+    { id: 'p3', title: 'Used plastic bottle', price: 0.99 },
+    { id: 'p4', title: 'Half-dried plant', price: 2.99 },
+    { id: 'p5', title: 'Keyboard', price: 29.99 },
+    { id: 'p6', title: 'Monitor', price: 199.99 },
+    { id: 'p7', title: 'Headphones', price: 20.99 },
+    { id: 'p8', title: 'Microwave', price: 62.99 },
+    { id: 'p9', title: 'Gaming Mouse', price: 29.99 },
+    { id: 'p10', title: 'Harry Potter 3', price: 9.99 },
+    { id: 'p11', title: 'Used plastic bottle', price: 0.99 },
+    { id: 'p12', title: 'Half-dried plant', price: 2.99 },
+    { id: 'p13', title: 'Keyboard', price: 29.99 },
+    { id: 'p14', title: 'Monitor', price: 199.99 },
+    { id: 'p15', title: 'Headphones', price: 20.99 },
+    { id: 'p16', title: 'Microwave', price: 62.99 }
   ];
 
   const [cartState, dispatch] = useReducer(shopReducer, { cart: [] });
