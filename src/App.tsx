@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import GlobalState from './context/GlobalState';
 import ProductsPage from './pages/Products';
@@ -15,6 +15,7 @@ const App = (props: Props) => {
         <Switch>
           <Route path='/' component={ProductsPage} exact />
           <Route path='/cart' component={CartPage} exact />
+          <Redirect to='/' />
         </Switch>
       </BrowserRouter>
     </GlobalState>

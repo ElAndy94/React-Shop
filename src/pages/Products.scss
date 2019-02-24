@@ -17,4 +17,12 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  & .products__button {
+    color: white;
+    background-color: green;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
 }

@@ -27,6 +27,7 @@ const ProductsPage = (props: Props, binding: any) => {
                   <div>
                     <button
                       onClick={context.addProductToCart.bind(binding, product)}
+                      className='products__button'
                     >
                       Add to Cart
                     </button>

@@ -36,6 +36,7 @@ const CartPage = (props: Props, binding: any) => {
                     binding,
                     cartItem.id
                   )}
+                  className='cart__button'
                 >
                   Remove from Cart
                 </button>
