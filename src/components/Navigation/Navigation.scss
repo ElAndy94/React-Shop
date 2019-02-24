@@ -3,14 +3,14 @@
   height: 4.5rem;
   background: #006d23;
 
-  & nav {
+  & .navigation__items {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
   }
 
-  & ul {
+  &__items ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -20,20 +20,23 @@
     align-items: center;
   }
 
-  & li {
+  &__items li {
     margin: 0 1rem;
   }
 
-  & a {
+  &__items a {
     display: block;
     padding: 0.5rem 1rem;
     text-decoration: none;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
   }
 
-  & a:hover,
-  & a:active {
+  &__items a:hover,
+  &__items a:active,
+  &__items a.hover,
+  &__items a.active {
     background: white;
     color: #006d23;
   }

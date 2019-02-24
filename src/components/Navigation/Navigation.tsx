@@ -1,7 +1,7 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-import "./Navigation.scss";
+import './Navigation.scss';
 
 interface Props {
   cartItemNumber: number;
@@ -9,13 +9,17 @@ interface Props {
 
 const Navigation = (props: Props) => (
   <header className='navigation'>
-    <nav>
+    <nav className='navigation__items'>
       <ul>
         <li>
-          <NavLink to='/'>Products</NavLink>
+          <NavLink exact to='/'>
+            Products
+          </NavLink>
         </li>
         <li>
-          <NavLink to='/cart'>Cart ({props.cartItemNumber})</NavLink>
+          <NavLink exact to='/cart'>
+            Cart ({props.cartItemNumber})
+          </NavLink>
         </li>
       </ul>
     </nav>
