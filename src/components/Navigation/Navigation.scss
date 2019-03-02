@@ -1,7 +1,7 @@
 .navigation {
   width: 100%;
   height: 4.5rem;
-  background: #006d23;
+  background: rgb(26, 159, 26);
 
   & .navigation__items {
     display: flex;
@@ -29,8 +29,8 @@
     padding: 0.5rem 1rem;
     text-decoration: none;
     color: white;
-    border-radius: 0.5rem;
     cursor: pointer;
+    // border-radius: 0.5rem;
   }
 
   &__items a:hover,
