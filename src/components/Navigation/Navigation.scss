@@ -1,7 +1,7 @@
 .navigation {
   width: 100%;
-  height: 4.5rem;
-  background: rgb(26, 159, 26);
+  height: 4rem;
+  background: #243754;
 
   & .navigation__items {
     display: flex;
@@ -20,16 +20,18 @@
     align-items: center;
   }
 
-  &__items li {
-    margin: 0 1rem;
-  }
+  // &__items li {
+  // margin: 0 0rem;
+  // }
 
   &__items a {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 1.3rem 1rem;
     text-decoration: none;
     color: white;
     cursor: pointer;
+    border-bottom: 4px solid transparent;
+    // padding: 0.5rem 1rem;
     // border-radius: 0.5rem;
   }
 
@@ -37,7 +39,9 @@
   &__items a:active,
   &__items a.hover,
   &__items a.active {
-    background: white;
-    color: #006d23;
+    background: #33507c;
+    color: white;
+    border-bottom: 4px solid #5ca2c6;
+    // color: #006d23;
   }
 }
