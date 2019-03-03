@@ -36,7 +36,6 @@ const ProductsPage = (props: Props, binding: any) => {
           return b.price - a.price;
         }
       });
-    // @ts-ignore: currentTarget Error
     setProductsFiltered(filteredItems);
   };
 

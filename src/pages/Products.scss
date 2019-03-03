@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  // align-items: baseline;
 
   & ul {
     list-style: none;
@@ -24,11 +23,12 @@
   }
 
   & .products__button {
+    font-size: 0.8rem;
     color: white;
-    background-color: rgb(26, 159, 26);
     padding: 0.5rem;
     cursor: pointer;
-    // border-radius: 0.5rem;
+    background-color: #82a925;
+    outline: 0;
   }
 
   .searchBar {
@@ -40,8 +40,6 @@
     width: 37rem;
     height: 3.125rem;
     outline: 0;
-    // width: 30rem;
-    // width: 49.2rem;
   }
 
   .searchBar2 {
@@ -52,12 +50,15 @@
     width: 7.5rem;
     height: 3.125rem;
     outline: 0;
-    // margin-left: 2rem;
-    // margin-bottom: 1rem;
-    // width: 7.5rem;
-    // margin-top: 3rem;
-    // background-color: blueviolet;
+    position: relative;
   }
+
+  // .searchBar2::after {
+  //   position: absolute;
+  //   left: 6px;
+  //   top: 2px;
+  //   content: '£';
+  // }
 
   .dropdown {
     padding-left: 1rem;
