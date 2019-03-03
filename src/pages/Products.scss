@@ -2,6 +2,10 @@
   width: 50rem;
   max-width: 90%;
   margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // align-items: baseline;
 
   & ul {
     list-style: none;
@@ -26,27 +30,42 @@
     cursor: pointer;
     // border-radius: 0.5rem;
   }
-}
 
-.searchBar {
-  padding-left: 1rem;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  border: solid 1px #e9e9e9;
-  width: 49.2rem;
-  height: 3.125rem;
-  outline: 0;
-}
+  .searchBar {
+    padding-left: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border: solid 1px #e9e9e9;
+    width: 37rem;
+    height: 3.125rem;
+    outline: 0;
+    // width: 30rem;
+    // width: 49.2rem;
+  }
 
-.searchBar2 {
-  padding-left: 1rem;
-  // margin-top: 3rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  border: solid 1px #e9e9e9;
-  width: 5rem;
-  height: 3.125rem;
-  outline: 0;
-  // background-color: blueviolet;
+  .searchBar2 {
+    padding-left: 1rem;
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    border: solid 1px #e9e9e9;
+    width: 7.5rem;
+    height: 3.125rem;
+    outline: 0;
+    // margin-left: 2rem;
+    // margin-bottom: 1rem;
+    // width: 7.5rem;
+    // margin-top: 3rem;
+    // background-color: blueviolet;
+  }
+
+  .dropdown {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: solid 1px #e9e9e9;
+    width: 7.5rem;
+    height: 2.9rem;
+    outline: 0;
+  }
 }

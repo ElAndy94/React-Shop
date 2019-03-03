@@ -14,7 +14,7 @@ const App = (props: Props) => {
       <BrowserRouter>
         <Switch>
           <Route path='/' component={ProductsPage} exact />
-          <Route path='/cart' component={CartPage} exact />
+          <Route path='/cart' component={CartPage} />
           <Redirect to='/' />
         </Switch>
       </BrowserRouter>
