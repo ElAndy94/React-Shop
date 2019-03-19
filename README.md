@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/95e95bfda4384a6ba19e4a3d29cb524f)](https://app.codacy.com/app/ElAndy94/React-Shop?utm_source=github.com&utm_medium=referral&utm_content=ElAndy94/React-Shop&utm_campaign=Badge_Grade_Dashboard)
+
 In the project directory, you can run:
 
 ### `npm start`
